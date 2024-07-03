@@ -46,10 +46,14 @@ const App = () : JSX.Element => {
   }
 
   return (
+
+      <main>
+          <h1>TodoApp TS</h1>
+          <div className="todoapp">
+            <Todos todos={todos} handleRemove={handleRemove} handleCompleted={handleCompleted} />
+          </div>
+      </main>
      
-      <div className="todoapp">
-          <Todos todos={todos} handleRemove={handleRemove} handleCompleted={handleCompleted} />
-      </div>
       
   
   )
